@@ -1,0 +1,10 @@
+/* Done */
+1 - Build HTML Structure.
+2 - Style Page With CSS.
+/* To Dos*/
+3 - Prepare Server-Side by installing all dependencies and middlewares needed and initializing project folder and spin up our server.
+4 - create app api endpoint, get request and post request routes
+5 - post request req body will contain data from the user and from the weather api.
+6 - client side we will prepare our apikey credentials and getData postData methods with fetch
+7 - use promise chain to collect data from both user and api and send it to the server side in the post req body.
+8 - use get request to get the data from the server app api endpoint and use it to Update UI according to it.   

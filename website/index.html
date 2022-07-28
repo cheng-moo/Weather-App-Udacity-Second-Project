@@ -6,9 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <main class="app">
+        <header class="header">
+            <h1 class="app__title">Weather App</h1>
+            <img src="./images/—Pngtree—business logo design free logo_915991.png" alt="logo">
+        </header>
+        <section class="zip__section">
+            <label for="zip">Enter Zipcode here</label>
+            <input type="text" id="zip" placeholder="enter zip code here">
+        </section>
+        <section class="feeling__section">
+            <label for="feelings">How are you feeling today?</label>
+            <textarea name="feelings" id="feelings" cols="30" rows="10" placeholder = 'Enter your feelings here'></textarea>
+        </section>
+        <section class="recent--entry__section">
+            <div class="recent--entry__title">Most Recent Entry</div>
+            <div class="recent--entry__wrapper">
+                <div id="date">27/07/2020</div>
+                <div id="temp">35C</div>
+                <div id="content">this is content</div>
+            </div>
+        </section>
+    </main>
+    <button id="generate" type="submit" class="button">Generate</button>
     <script src="app.js"></script>
 </body>
 </html>
