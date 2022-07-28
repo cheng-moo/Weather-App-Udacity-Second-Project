@@ -22,10 +22,17 @@ const server = app.listen(port, () => {
 });
 // Post Route
 app.post('/postWeatherData', (req, res) => {
-    const newWeatherData = {};
+    const newWeatherData = {
+        date: req.body.date,
+        temp: req.body.temp,
+        feeling: req.body.feeling
+    };
     projectData.push(newWeatherData);
+    console.log(projectData);
+    
 });
 // Get Route
 app.get('/getWeatherData', (req,res) => {
     res.send(projectData);
+    console.log(projectData);
 })
