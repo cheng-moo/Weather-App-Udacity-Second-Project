@@ -26,6 +26,12 @@ function getWeatherData () {
 // getData from API method
 const getData = async (url = '', data = '', apiKey = '') => {
     const response = await fetch(url + data + apiKey);
+    if (response.status === 404) {
+        document.getElementById('zip').classList.add('error');
+    } else {
+
+        document.getElementById('zip').classList.remove('error');
+    }
     try {
     const data = await response.json();
     return data;
