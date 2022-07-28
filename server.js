@@ -20,3 +20,12 @@ const server = app.listen(port, () => {
     console.log('Server Is Running');
     console.log(`Local Host: ${port}`);
 });
+// Post Route
+app.post('/postWeatherData', (req, res) => {
+    const newWeatherData = {};
+    projectData.push(newWeatherData);
+});
+// Get Route
+app.get('/getWeatherData', (req,res) => {
+    res.send(projectData);
+})
