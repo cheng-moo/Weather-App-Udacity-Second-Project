@@ -22,15 +22,19 @@ Dynamic Weather Journal App
 10 - Dynamically Update UI
 
 # APIS AND Methods Used
-    - API Used In The Project
+ - API Used In The Project
         [OpenWeatherMap API](https://openweathermap.org/current)
-    - Runtime Environment
+    
+ - Runtime Environment
         Node JS Express open-source, cross-platform runtime environment
-    - Async Await and Fetch to Consume Data For APIs and POST Data To Server.
-    - Event Listeners To Listen To User Interactions With The Page.
+        
+ - Async Await and Fetch to Consume Data For APIs and POST Data To Server.
+ 
+ - Event Listeners To Listen To User Interactions With The Page.
 # Summary For The Project Creating Process
 
  /* Done */
+ 
 1 - Build HTML Structure.
 
 2 - Style Page With CSS.
