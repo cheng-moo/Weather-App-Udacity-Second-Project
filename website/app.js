@@ -64,9 +64,9 @@ const updateUI = async () => {
         const date = document.getElementById('date');
         const temp = document.getElementById('temp');
         const content = document.getElementById('content');
-        date.textContent = weatherData[weatherData.length - 1].date;
-        temp.textContent =`${weatherData[weatherData.length - 1].temp}\u00B0C`;
-        content.textContent = weatherData[weatherData.length - 1].feeling;
+        date.textContent = weatherData.date;
+        temp.textContent =`${weatherData.temp}\u00B0C`;
+        content.textContent = weatherData.feeling;
     } catch (error) {
         throw new Error(error);
     }

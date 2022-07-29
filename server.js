@@ -1,5 +1,5 @@
 // App endpoint
-const projectData = [];
+let projectData = {};
 // Add express package to the project
 const express = require('express');
 // Create instance of our app with express;
@@ -27,7 +27,7 @@ app.post('/postWeatherData', (req, res) => {
         temp: req.body.temp,
         feeling: req.body.feeling
     };
-    projectData.push(newWeatherData);
+    projectData = newWeatherData;
     console.log(projectData);
     
 });
